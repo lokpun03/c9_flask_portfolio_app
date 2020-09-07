@@ -16,7 +16,7 @@ def home_page():
 @app.route('/<name>')
 def profile(name):
 	mero_test = 100
-	return render_template('index.html', name=name)
+	return render_template('index.html', name=mero_test)
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
