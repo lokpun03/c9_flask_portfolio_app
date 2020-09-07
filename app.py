@@ -17,8 +17,9 @@ def home_page():
 def profile(name):
 	data_type_name = str(type(name))
 	lokpun = type("Mero Sapana")
+	printlok = str(lokpun)
 	
-	mero_test = str(name) + " Please verify the correct URL" + data_type_name + lokpun
+	mero_test = str(name) + " Please verify the correct URL" + data_type_name + printlok
 	return render_template('index.html', name=mero_test)
 
 
