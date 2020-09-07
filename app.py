@@ -15,7 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	new_name = name
+	new_name = name + "Please verify the valid URL"
   	return render_template('index.html', name=new_name)
 
 
