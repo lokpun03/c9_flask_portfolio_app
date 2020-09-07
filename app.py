@@ -14,8 +14,9 @@ def home_page():
 	return render_template('index.html')
 
 @app.route('/<name>')
+new_name = name +"Welcome to Lok's test website, Please check the valid ulr" 
 def profile(name):
-	return render_template('index.html', name=name)
+	return render_template('index.html', name=new_name)
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
