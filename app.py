@@ -15,6 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
+	mero_test = 100
 	return render_template('index.html', name=name)
 
 
