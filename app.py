@@ -15,7 +15,7 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	mero_test = str(name) + "Welcome"
+	mero_test = str(name) + " Please verify the correct URL"
 	return render_template('index.html', name=mero_test)
 
 
