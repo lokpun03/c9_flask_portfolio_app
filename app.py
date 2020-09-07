@@ -16,7 +16,9 @@ def home_page():
 @app.route('/<name>')
 def profile(name):
 	data_type_name = str(type(name))
-	mero_test = str(name) + " Please verify the correct URL" + data_type_name
+	lokpun = "Mero Sapana"
+	
+	mero_test = str(name) + " Please verify the correct URL" + data_type_name + type(lokpun)
 	return render_template('index.html', name=mero_test)
 
 
